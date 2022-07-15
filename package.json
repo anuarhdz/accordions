@@ -1,0 +1,46 @@
+{
+  "name": "accordions",
+  "version": "1.0.0",
+  "description": "Simple, flexible and accessible script to create collapsible elements, also known as accordions.",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "lint": "eslint ./",
+    "lintfix": "eslint --fix ./",
+    "prettier": "prettier --write './**/*.js'",
+    "prettierfix": "prettier --write -- --fix './**/*.js'",
+    "dev": "run-p watch lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuarhdz/accordions.git"
+  },
+  "keywords": [
+    "accordions",
+    "a11y-accordions"
+  ],
+  "contributors": [
+    {
+      "name": "Dianyela Maldonado",
+      "email": "dianyela@heyblackmagic.com"
+    },
+    {
+      "name": "Anuar Reyes",
+      "email": "anuar@heyblackmagic.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anuarhdz/accordions/issues"
+  },
+  "homepage": "https://github.com/anuarhdz/accordions#readme",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.6.2",
+    "prettier": "2.7.1"
+  }
+}
