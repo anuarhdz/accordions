@@ -2,11 +2,11 @@
   "name": "accordions",
   "version": "1.0.0",
   "description": "Simple, flexible and accessible script to create collapsible elements, also known as accordions.",
-  "source": "src/index.js",
+  "source": ["src/index.js", "examples/index.html"],
   "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
-    "watch": "parcel watch",
+    "watch": "parcel serve",
     "build": "parcel build",
     "lint": "eslint ./",
     "lintfix": "eslint --fix ./",
