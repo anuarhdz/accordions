@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      /* base styles */
+      --body-font-size: 1rem;
+      --padding-top: 10px;
+      --padding-bottom: 10px;
+      --padding-left: calc(var(--padding-top) * 2);
+      --padding-right: calc(var(--padding-top) * 2);
+      --padding-total: var(--padding-top) var(--padding-left);
+
+      /* tabs styles */
+      --accordion-container-margin-left: auto;
+      --accordion-container-margin-right: auto;
+      --accordion-control-padding: var(--padding-total);
+      --accordion-control-font-weight: bold;
+      --accordion-control-font-size: calc(var(--body-font-size) * 1.5);
+
+      --accordion-panel-padding: var(--padding-total);
+    }
+  </style>
+  <link rel="stylesheet" href="./demo/app.css">
+  <script src="./demo/app.js" type="module"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h2 class="title-container">Accordions Script</h2>
+      <div id="accordions-container" class="accordions-container">
+        <h3>
+          <button class="accordion-control" type="button" id="accordion-button-1">
+            Lorem Ipsum dolor sit amet consectetur
+            adipisicing elit
+          </button>
+        </h3>
+        <div class="accordion-panel shrink" id="accordion-panel-1">
+          <div>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+          </div>
+        </div>
+        <h3>
+          <button class="accordion-control" type="button" id="accordion-button-2">Lorem Ipsum dolor sit amet consectetur
+            adipisicing elit</button>
+        </h3>
+        <div class="accordion-panel shrink" id="accordion-panel-2">
+          <div>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+          </div>
+        </div>
+        <h3>
+          <button class="accordion-control" type="button" id="accordion-button-3">Lorem Ipsum dolor sit amet consectetur
+            adipisicing elit</button>
+        </h3>
+        <div class="accordion-panel shrink" id="accordion-panel-3">
+          <div>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+          </div>
+        </div>
+        <h3>
+          <button class="accordion-control" type="button" id="accordion-button-4">Lorem Ipsum dolor sit amet consectetur
+            adipisicing elit</button>
+        </h3>
+        <div class="accordion-panel shrink" id="accordion-panel-4">
+          <div>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+          </div>
+        </div>
+        <h3>
+          <button class="accordion-control" type="button" id="accordion-button-5">Lorem Ipsum dolor sit amet consectetur
+            adipisicing elit</button>
+        </h3>
+        <div class="accordion-panel shrink" id="accordion-panel-5">
+          <div>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+            <p>Pellentesque sit amet augue laoreet sapien dapibus suscipit nec quis leo. Pellentesque magna nisi, mollis
+              vitae massa
+              eget, egestas commodo lacus. Duis sit amet varius mauris. Cras venenatis nisl sapien, vel pretium ipsum
+              consectetur vel.
+              Suspendisse tincidunt erat eu sem porttitor luctus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

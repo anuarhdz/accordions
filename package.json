@@ -2,16 +2,19 @@
   "name": "@black-magic/accordions",
   "version": "1.0.0",
   "description": "Simple, flexible and accessible script to create collapsible elements, also known as accordions.",
+  "source": "src/index.js",
+  "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
-    "watch": "parcel serve",
+    "watch": "parcel watch",
     "build": "parcel build",
     "lint": "eslint ./",
     "lintfix": "eslint --fix ./",
     "prettier": "prettier --write './**/*.js'",
     "prettierfix": "prettier --write -- --fix './**/*.js'",
     "clean": "rimraf ./dist && rimraf ./.parcel-cache",
-    "dev": "run-s clean watch"
+    "dev": "npm run clean && parcel src/index.html --dist-dir ./dist",
+    "prod": "run-s clean build"
   },
   "repository": {
     "type": "git",
@@ -37,28 +40,5 @@
     "prettier": "2.7.1",
     "rimraf": "^3.0.2"
   },
-  "directories": {
-    "example": "examples"
-  },
-  "author": "Anuar Reyes",
-  "targets": {
-    "example": {
-      "source": [
-        "./examples/index.html"
-      ],
-      "distDir": "./dist"
-    },
-    "js": {
-      "source": [
-        "./src/index.js"
-      ],
-      "distDir": "./dist/module.js"
-    },
-    "css": {
-      "source": [
-        "./src/index.css"
-      ],
-      "distDir": "./dist/module.css"
-    }
-  }
+  "author": "Anuar Reyes"
 }
