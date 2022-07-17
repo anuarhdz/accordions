@@ -1,0 +1,89 @@
+:root {
+  --accordion-control-border-color: #000;
+  --accordion-control-border-style: solid;
+  --accordion-control-border-width: 1px;
+  --accordion-control-border: var(--accordion-control-border-width)
+    var(--accordion-control-border-style) var(--accordion-control-border-color);
+
+  --accordion-panel-border-color: var(--accordion-control-border-color);
+  --accordion-panel-border-style: var(--accordion-panel-border-style);
+  --accordion-panel-border-width: var(--accordion-panel-border-width);
+  --accordion-panel-border: var(--accordion-control-border);
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes growth {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+@keyframes shrink {
+  from {
+    clip-path: inset(0);
+  }
+}
+.accordions-container {
+  max-width: var(--accordion-container-max-width, 680px);
+  margin-top: var(--accordion-container-margin-top, 0);
+  margin-left: var(--accordion-container-margin-left, 0);
+  margin-right: var(--accordion-container-margin-right, 0);
+  margin-bottom: var(--accordion-container-margin-bottom, 0);
+}
+.accordion-control {
+  border-top: var(--accordion-control-border);
+  border-left: var(--accordion-control-border);
+  border-right: var(--accordion-control-border);
+  border-bottom: var(--accordion-control-border);
+  border-bottom-width: 0.5px;
+  border-radius: var(--accordion-control-border-radius, 3px);
+  background: var(--accordion-control-background, transparent);
+  font-weight: var(--accordion-control-font-weight, normal);
+  font-size: var(--accordion-control-padding, 1rem);
+  padding: var(--accordion-control-padding, 16px 32px);
+  font-family: var(--accordion-control-font-family, inherit);
+  width: var(--accordion-control-width, 100%);
+  text-align: var(--accordion-text-align, left);
+}
+
+.accordion-control:last-of-type {
+  border-bottom: var(--accordion-control-border);
+}
+
+.accordion-panel[aria-hidden="true"] {
+  display: none;
+}
+
+/* .accordion-panel[aria-hidden="true"] > div {
+  animation: shrink 200ms both, fade-down 200ms both;
+  clip-path: inset(0 0 100% 0);
+} */
+
+.accordion-panel {
+  border: var(--accordion-panel-border);
+  border-top: none;
+  border-bottom-width: 0.5px;
+  border-radius: var(--accordion-panel-border-radius, 0 0 3px 3px);
+  padding: var(--accordion-panel-padding, 16px 32px);
+}
+
+.accordion-panel.growth > div {
+  animation: growth 100ms both, fade-down 100ms both;
+  clip-path: inset(0);
+}
+
+.accordion-panel.shrink > div {
+  animation: shrink 100ms both, fade-down 100ms both;
+  clip-path: inset(0 0 100% 0);
+}

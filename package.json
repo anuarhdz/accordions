@@ -1,9 +1,7 @@
 {
-  "name": "accordions",
+  "name": "@black-magic/accordions",
   "version": "1.0.0",
   "description": "Simple, flexible and accessible script to create collapsible elements, also known as accordions.",
-  "source": ["src/index.js", "examples/index.html"],
-  "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
     "watch": "parcel serve",
@@ -12,7 +10,8 @@
     "lintfix": "eslint --fix ./",
     "prettier": "prettier --write './**/*.js'",
     "prettierfix": "prettier --write -- --fix './**/*.js'",
-    "dev": "run-p watch lint"
+    "clean": "rimraf ./dist && rimraf ./.parcel-cache",
+    "dev": "run-s clean watch"
   },
   "repository": {
     "type": "git",
@@ -23,14 +22,8 @@
     "a11y-accordions"
   ],
   "contributors": [
-    {
-      "name": "Dianyela Maldonado",
-      "email": "dianyela@heyblackmagic.com"
-    },
-    {
-      "name": "Anuar Reyes",
-      "email": "anuar@heyblackmagic.com"
-    }
+    "Dianyela Maldonado <dianyela@heyblackmagic.com>",
+    "Anuar Reyes <anuar@heyblackmagic.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -41,6 +34,31 @@
     "eslint": "^8.19.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.6.2",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "rimraf": "^3.0.2"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "author": "Anuar Reyes",
+  "targets": {
+    "example": {
+      "source": [
+        "./examples/index.html"
+      ],
+      "distDir": "./dist"
+    },
+    "js": {
+      "source": [
+        "./src/index.js"
+      ],
+      "distDir": "./dist/module.js"
+    },
+    "css": {
+      "source": [
+        "./src/index.css"
+      ],
+      "distDir": "./dist/module.css"
+    }
   }
 }
